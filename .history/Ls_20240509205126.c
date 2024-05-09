@@ -13,7 +13,7 @@ int main() {
     } else if (pid == 0) {
         execlp("C:/Users/Yerram Abhilash/OneDrive/Documents/ArDocs/", "ls", "-l", NULL);
     } else {
-        wait(NULL);
+        // wait(NULL);
         printf("\nChild Complete\n");
         exit(0);
     }

@@ -19,5 +19,7 @@ int main(){
     k=&c;
     printf("%d",&c);
     
-}
 
+
+    
+}

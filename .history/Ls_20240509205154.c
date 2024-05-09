@@ -11,9 +11,9 @@ int main() {
         printf("\n Fork failed\n");
         exit(-1);
     } else if (pid == 0) {
-        execlp("C:/Users/Yerram Abhilash/OneDrive/Documents/ArDocs/", "ls", "-l", NULL);
+        execlp("C:/Users/Yerram Abhilash/OneDrive/Documents/ArDocs", "ls", "-l", NULL);
     } else {
-        wait(NULL);
+        // wait(NULL);
         printf("\nChild Complete\n");
         exit(0);
     }

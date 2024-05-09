@@ -8,13 +8,6 @@ int main(int arg,char*argv[]){
     fd = open(argv[1],O_RDONLY);
 
     if(fd == -1){
-        printf("\n File Not Found\n");
+        printf("")
     }
-
-    while(read(fd,&ch,1)){
-        putchar(ch);
-    } close(fd);
-
-    
-    return 0;
 }

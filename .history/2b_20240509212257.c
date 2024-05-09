@@ -7,7 +7,7 @@ int main(){
 	pid = fork();
 	
 	if (pid < 0){
-		printf(" Fork failed\n");
+		printf(stderr," Fork failed\n");
 	}
 	else if( pid == 0){
 		printf("Child\n");

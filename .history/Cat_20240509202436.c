@@ -15,6 +15,14 @@ int main(int arg,char*argv[]){
         putchar(ch);
     } close(fd);
 
-    
+    fd = open(argv[2],O_RDONLY);
+
+    if(fd == -1){
+        printf("\n File Not Found\n");
+    }
+
+    while(read(fd,&ch,1)){
+        putchar(ch);
+    } close(fd);
     return 0;
 }
